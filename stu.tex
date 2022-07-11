@@ -1,1 +1,54 @@
-Nguyen The Quy -
+using System;
+
+namespace ThuatToanC
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("nhap so phan tu:");
+
+            int n = int.Parse(Console.ReadLine());
+
+            int[] a = new int[n];
+
+
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write("nhap phan tu thu " + i+ ": ");
+                a[i] = int.Parse(Console.ReadLine());
+            }
+
+             ////Hello STUnited
+
+            //int trungGian;
+            //for (int i = 0; i < n - 1; i++)
+            //{
+            //    for (int j = i + 1; j < n; j++)
+            //    {
+            //        if (a[i] < a[j])
+            //        {
+            //            trungGian = a[i];
+            //            a[i] = a[j];
+            //            a[j] = trungGian;
+            //        }
+            //    }
+            //    Console.Write( a[i]);
+
+            //}
+
+             int max = 0;
+            for(int i =0; i<n-1; i++)
+            {
+               
+                if (max > a[i])
+                {
+                    max = a[i];
+                    
+                }
+                Console.WriteLine(max);
+            }
+
+        }
+    }
+}
